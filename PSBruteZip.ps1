@@ -10,7 +10,6 @@
 		
 #>
 
-function psbrutezip {
 
 $myArray = @(
 "",
@@ -104,4 +103,3 @@ Write-Output "`n"
 
 
 
-}
