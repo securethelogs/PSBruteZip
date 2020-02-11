@@ -12,6 +12,7 @@ Either locally using the script or remotely using:
 powershell –nop –c “iex(New-Object Net.WebClient).DownloadString(‘https://raw.githubusercontent.com/securethelogs/PSBruteZip/master/PSBruteZip.ps1’)”
 
 
+
 Pre-Reqs:
 
 1. 7Zip Installed
