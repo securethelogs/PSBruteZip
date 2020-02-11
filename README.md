@@ -1,19 +1,15 @@
 # PSBruteZip
 
-![Securethelogs.com](https://ctrla1tdel.files.wordpress.com/2019/04/cropped-thumb-1920-865098.jpg)
-
-
-PSBruteZip allows you to brute force your way into Zip files should you have forgotten the password. 
 
 ![psbrutezip](https://ctrla1tdel.files.wordpress.com/2020/01/image-33.png?w=1024)
 
-
+PSBruteZip allows you to brute force your way into Zip files should you have forgotten the password. 
 
 How To Run:
 
-- Download PSBruteZip here:
-- Run: Import-Module .\PSBruteZip.ps1
-- Run: PSBruteZip and follow the steps
+Either locally using the script or remotely using: 
+
+powershell –nop –c “iex(New-Object Net.WebClient).DownloadString(‘https://raw.githubusercontent.com/securethelogs/PSBruteZip/master/PSBruteZip.ps1’)”
 
 
 Pre-Reqs:
@@ -24,7 +20,7 @@ Pre-Reqs:
 
 Once it has these details, it will run through and crack the password, as so:
 
-![psbrutezip1](https://ctrla1tdel.files.wordpress.com/2020/01/image-34.png?w=1024)
+![psbrutezip1](https://ctrla1tdel.files.wordpress.com/2020/02/psbrutezip.gif)
 
 
 If you have any more sites for me to add or any feedback, let me know:
