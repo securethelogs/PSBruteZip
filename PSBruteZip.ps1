@@ -7,7 +7,7 @@
 
 	.NOTES
 		Aurthor: https://securethelogs.com
-		
+
 #>
 
 
@@ -18,7 +18,7 @@ $myArray = @(
 "|     ___/\_____  \  |    |  _/\_  __ \  |  \   __\/ __ \\___   /  \____ \ ",
 "|    |    /        \ |    |   \ |  | \/  |  /|  | \  ___/ /    /|  |  |_> > ",
 "|____|   /_______  / |______  / |__|  |____/ |__|  \___  >_____ \__|   __/  ",
-"               \/         \/                         \/      \/  |__|      "   ,         
+"               \/         \/                         \/      \/  |__|      "   ,
 ""
 "Creator: https://securethelogs.com / @securethelogs",
 "")
@@ -45,8 +45,9 @@ $passwords = Get-Content $Passwordlist
 
 foreach ($i in $passwords){
 
+echo "trying password: $i"
 
-$brute = & 'C:\Program Files\7-Zip\7z.exe' e "$ziploc" -p"$i" -y
+$brute = & $7z e "$ziploc" -p"$i" -y
 
 if ($brute -contains "Everything is Ok"){
 
@@ -54,6 +55,7 @@ $Thepasswordis = $i
 
 Write-Output "Password Found: $Thepasswordis"
 
+break
 
 } # Brute IF
 
@@ -95,11 +97,8 @@ else {
 
 #7Zip Isn't Installed
 
-Write-Output "7Zip doesn't appear to be installed. This script requires it, so if you wish to use, please install."
+Write-Output "7Zip doesn't appear to be installed. This script requires it, so if you wish to use, please install. If it is installed, try changing the 7z.exe path in this script"
 Write-Output "`n"
 
 
 }
-
-
-
